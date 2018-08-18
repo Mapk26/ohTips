@@ -1,11 +1,14 @@
 # ohTips
 
-This library has the aim to help you creating a simple **"Show tip of the day"** dialog in few easy steps.
-As any other similar dialog it comes with a -do not show- checkbox to disallow the tips on startup.
+This library has the aim to help you creating simple UI dialogs for the most common usage:
 
-**It's a work in progress project, use it carefully until a stable release will be announced**
+* **"Show tip of the day"** dialog
+* a simple dialog with a single "ok" button
+* **Rate this app** dialog
 
-![screenshot](https://raw.githubusercontent.com/Mapk26/ohTips/master/screens/ohtips-screens.png)
+...and more is coming!
+
+![screenshot](https://raw.githubusercontent.com/Mapk26/ohTips/master/ohtips-screens.png)
 
 ## Import with Gradle
 Add it in your root build.gradle at the end of repositories:
@@ -24,8 +27,34 @@ dependencies {
 	  implementation 'com.github.Mapk26:ohTips:1.1.0'
 }
 ```
+## ohDialog class
+With this class you can create simple dialogs to show a single message. ATM only one "ok" button (text customizable) is available and it just closes the dialog. Soon I will add a second button so that you can set negative and positive buttons like in standard android dialogs.
 
-## How to use
+### How to use ohDialog
+```java
+    private OhDialog ohDialog;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        ohDialog = new OhDialog(this);
+	ohDialog.setIcon(R.drawable.ic_speaker_notes);
+        ohDialog.setTitle("Simple Dialog");
+        ohDialog.setMessage("This is a simple dialog created with ohDialog class!");
+        ohDialog.setThemeColor(R.color.green_400);
+
+        ohDialog.show();
+    }
+```
+
+## ohTips class
+This is the class to show tips of the day, it comes with a checkbox "Don't show tips of the day".
+
+One tip per day is shown, btw there is a method ```.restart()```to force the dialog to be shown again.
+
+### How to use ohTips
 It's really simple and basic to use. First of all add in your strings.xml 3 string-array for title, message and icon.
 The icon string-array is not mandatory, if you skip it an info default icon will be used.
 
@@ -66,9 +95,40 @@ Then create an instance of the BaseTip class, you can set the main color and but
 
         tips = new OhTips(this);
         tips.setThemeColor(R.color.blue_400);
-        tips.setButtonText("Thanks!");
+        tips.setButtonText("Nice!");
 
         tips.show();
+    }
+```
+
+
+## ohStars class
+This is the "Rate this app" dialog that you can use to ask users to review your app on the marketplace. 
+
+The default values are: 10 launches and 7 days.
+It means that the dialog will be shown to the user after 10 launches of the app or 7 days after installation (first app launch).
+
+A ```.showNow()``` method will trigger the dialog immediatly.
+
+### How to use ohStars
+```java
+    private OhStars ohStars;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        ohStars = new OhStars(this);
+
+        ohStars.setLaunches(8); // custom number of launches
+        ohStars.setDays(5);	// custom number of days
+	ohStars.setThemeColor(R.color.blue_400);
+        ohStars.show();
+    }
+    
+    public void showRate(View view) {
+        ohStars.showNow();
     }
 ```
 
