@@ -1,0 +1,19 @@
+<resources>
+
+
+    <!--genaral spacing-->
+    <dimen name="xsmall">2dp</dimen>
+    <dimen name="small">3dp</dimen>
+    <dimen name="medium">5dp</dimen>
+    <dimen name="xmedium">7dp</dimen>
+    <dimen name="middle">10dp</dimen>
+    <dimen name="large">15dp</dimen>
+    <dimen name="smlarge">18dp</dimen>
+    <dimen name="mlarge">20dp</dimen>
+    <dimen name="mxlarge">25dp</dimen>
+    <dimen name="xlarge">35dp</dimen>
+    <dimen name="xmlarge">40dp</dimen>
+    <dimen name="xxlarge">50dp</dimen>
+    <dimen name="xxxlarge">55dp</dimen>
+
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- default strings -->
+    <string name="ohtips_btn_ok">Ok</string>
+    <string name="ohtips_donotshow">Non mostrare suggerimenti</string>
+    <string name="ohtips_btn_notnow">Più tardi</string>
+    <string name="ohtips_tit_star">Valuta questa app</string>
+    <string name="ohtips_txt_star">
+        Ciao! Ti piace questa app? Ti chiedo 30 secondi per lasciare una
+        tua valutazione sul marketplace! Grazie mille :)</string>
+
+
+</resources>

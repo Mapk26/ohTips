@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">ohTipsExample</string>
+
+    <string-array name="ohtips_title">
+        <item>Did you know?</item>
+        <item>Did you know?</item>
+        <item>It\' free!</item>
+        <item>Donate</item>
+    </string-array>
+
+
+    <string-array name="ohtips_message">
+        <item>You can use ohTips also for simple dialogs</item>
+        <item>You can configure: top bar color, icon, title, content and button text</item>
+        <item>This is distributed with MIT License, it means you can use this library for free in all your projects.</item>
+        <item>You can offer me a beer to support this project!</item>
+    </string-array>
+
+
+    <string-array name="ohtips_icon">
+        <item>ic_info</item>
+        <item>ic_palette</item>
+        <item>ic_info</item>
+        <item>ic_fastfood</item>
+    </string-array>
+
+</resources>

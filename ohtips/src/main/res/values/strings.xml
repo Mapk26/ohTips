@@ -1,0 +1,35 @@
+<resources>
+
+    <string name="lorem_title">Lorem ipsum</string>
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Curabitur a pellentesque nisi, ac maximus lectus. </string>
+
+
+
+    <!-- default strings -->
+    <string name="ohtips_btn_ok">Ok</string>
+    <string name="ohtips_donotshow">Don\'t show daily tips</string>
+    <string name="ohtips_btn_notnow">Not now</string>
+    <string name="ohtips_tit_star">Rate this app</string>
+    <string name="ohtips_txt_star">What\'s up? Do you like this app? If you find it useful please
+    take 30 seconds to rate this app on the marketplace. Thanks :)</string>
+
+
+
+    <string-array name="ohtips_title">
+
+    </string-array>
+
+
+    <string-array name="ohtips_message">
+
+    </string-array>
+
+
+    <string-array name="ohtips_icon">
+
+    </string-array>
+
+
+</resources>
