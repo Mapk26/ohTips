@@ -48,9 +48,13 @@ public class MainActivity extends AppCompatActivity {
     public void simpleDialog(View view) {
         ohDialog.setIcon(R.drawable.ic_speaker_notes);
         ohDialog.setTitle("Simple Dialog");
-        ohDialog.setMessage("This is a simple dialog created with ohTips!");
+        ohDialog.setMessage("This is a simple dialog created with ohDialog class!");
         ohDialog.setThemeColor(R.color.green_400);
         ohDialog.show();
 
+    }
+
+    public void showRate(View view) {
+        ohStars.showNow();
     }
 }
