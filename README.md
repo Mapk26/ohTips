@@ -8,6 +8,9 @@ This library has the aim to help you creating simple UI dialogs for the most com
 
 ...and more is coming!
 
+**OhTips** is currently used in this live projects:
+* Where is - link: https://play.google.com/store/apps/details?id=com.mapkcode.whereis
+
 ![screenshot](https://raw.githubusercontent.com/Mapk26/ohTips/master/ohtips-screens.png)
 
 ## Import with Gradle
