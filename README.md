@@ -27,7 +27,8 @@ allprojects {
 Add the dependency
 ```
 dependencies {
-	  implementation 'com.github.Mapk26:ohTips:1.1.0'
+	// please ignore the 1.0.1 newest version advise, i will fix it
+	  implementation 'com.github.Mapk26:ohTips:v1.1.1' 
 }
 ```
 ## ohDialog class
